@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Carta de matrícula</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; font-family: Arial, Helvetica, sans-serif; background: #f3f4f6; color: #1f2937; }
+    header { padding: 16px 20px; background: #fff; border-bottom: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    h1 { font-size: 1rem; margin: 0; font-weight: 600; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    a { color: #fff; background: #1f2937; text-decoration: none; padding: 10px 14px; border-radius: 8px; font-size: .9rem; }
+    main { padding: 16px; max-width: 1200px; margin: 0 auto; }
+    .note { font-size: .88rem; color: #4b5563; margin: 0 0 12px; }
+    .viewer { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px #00000012; }
+    iframe { display: block; width: 100%; height: calc(100vh - 130px); min-height: 500px; border: 0; }
+    @media (max-width: 600px) { header { align-items: flex-start; } main { padding: 8px; } iframe { height: 78vh; min-height: 400px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carta de matrícula</h1>
+    <nav class="actions" aria-label="Ações do documento">
+      <a href="Matricula%20Ramon.pdf" target="_blank" rel="noopener">Abrir PDF</a>
+      <a href="Matricula%20Ramon.pdf" download>Baixar PDF</a>
+    </nav>
+  </header>
+  <main>
+    <p class="note">Visualização do documento original. Use “Abrir PDF” se o visualizador não funcionar no seu dispositivo.</p>
+    <section class="viewer" aria-label="Carta de matrícula em PDF">
+      <iframe src="Matricula%20Ramon.pdf" title="Carta de matrícula em PDF"></iframe>
+    </section>
+  </main>
+</body>
+</html>
